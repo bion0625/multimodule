@@ -36,4 +36,13 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
+tasks.bootJar { enabled = false }
+tasks.jar { enabled = true }
+
 tasks.register("prepareKotlinBuildScriptModel") {}
+
+// ./gradlew clean :module-api:buildNeeded --stacktrace --info --refresh-dependencies -x test
+
+// java -jar module-api-0.0.1-SNAPSHOT.jar
+
+// debug -> info -> warn -> error
