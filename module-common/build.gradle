@@ -43,6 +43,7 @@ tasks.register("prepareKotlinBuildScriptModel") {}
 
 // ./gradlew clean :module-api:buildNeeded --stacktrace --info --refresh-dependencies -x test
 
+// api위치에서
 // java -jar module-api-0.0.1-SNAPSHOT.jar
 
 // debug -> info -> warn -> error
